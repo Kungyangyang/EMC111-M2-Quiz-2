@@ -48,7 +48,7 @@ doortopwallTexture.wrapS = THREE.RepeatWrapping;
 doortopwallTexture.wrapT = THREE.RepeatWrapping;
 doortopwallTexture.repeat.set(2, 0.75);
 
-//MESHES
+//MATERIALS
   //Floors
 const floor1Geometry = new THREE.BoxGeometry(100, 1, 80);
 const floor1Material = new THREE.MeshStandardMaterial({ map: floorTexture, color: 0x000000 });
@@ -244,4 +244,5 @@ function animate(time) {
     renderer.render(scene, camera);
     animateFire();
 }
+
 renderer.setAnimationLoop(animate);
