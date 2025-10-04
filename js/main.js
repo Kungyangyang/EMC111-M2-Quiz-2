@@ -18,34 +18,32 @@ scene.add(ambientLight);
 
 
 //TEXTURES
-const textureLoader = new THREE.TextureLoader();
+const starTexture = new THREE.TextureLoader().load("assets/textures/star.png");
+const poleTexture = new THREE.TextureLoader().load("assets/textures/pole.png");
+const barrelTexture = new THREE.TextureLoader().load("assets/textures/barrel.png");
+const fireTexture = new THREE.TextureLoader().load("assets/textures/fire.png");
 
-const starTexture = textureLoader.load("assets/star.png");
-const poleTexture = textureLoader.load("assets/pole.png");
-const barrelTexture = textureLoader.load("assets/barrel.png");
-const fireTexture = textureLoader.load("assets/fire.png");
-
-const floorTexture = textureLoader.load('assets/concrete.png');
+const floorTexture = new THREE.TextureLoader().load('assets/textures/concrete.png');
 floorTexture.wrapS = THREE.RepeatWrapping;
 floorTexture.wrapT = THREE.RepeatWrapping;
 floorTexture.repeat.set(4, 2);
 
-const wallTexture = textureLoader.load('assets/bricks.png');
+const wallTexture = new THREE.TextureLoader().load('assets/textures/bricks.png');
 wallTexture.wrapS = THREE.RepeatWrapping;
 wallTexture.wrapT = THREE.RepeatWrapping;
 wallTexture.repeat.set(4, 2);
 
-const smallwallTexture = textureLoader.load('assets/bricks.png');
+const smallwallTexture = new THREE.TextureLoader().load('assets/textures/bricks.png');
 smallwallTexture.wrapS = THREE.RepeatWrapping;
 smallwallTexture.wrapT = THREE.RepeatWrapping;
 smallwallTexture.repeat.set(1.75, 0.3);
 
-const doorsidewallTexture = textureLoader.load('assets/bricks.png');
+const doorsidewallTexture = new THREE.TextureLoader().load('assets/textures/bricks.png');
 doorsidewallTexture.wrapS = THREE.RepeatWrapping;
 doorsidewallTexture.wrapT = THREE.RepeatWrapping;
 doorsidewallTexture.repeat.set(1, 1);
 
-const doortopwallTexture = textureLoader.load('assets/bricks.png');
+const doortopwallTexture = new THREE.TextureLoader().load('assets/textures/bricks.png');
 doortopwallTexture.wrapS = THREE.RepeatWrapping;
 doortopwallTexture.wrapT = THREE.RepeatWrapping;
 doortopwallTexture.repeat.set(2, 0.75);
